@@ -569,13 +569,6 @@
                 ></div>
                 <!-- eslint-enable vue/no-v-html-->
 
-                <p v-if="config.showPoweredBy" data-testid="powered-by">
-                    {{ $t("Powered by") }}
-                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/louislam/uptime-kuma">
-                        {{ $t("Uptime Kuma") }}
-                    </a>
-                </p>
-
                 <div class="refresh-info mb-2">
                     <div>{{ $t("lastUpdatedAt", { date: lastUpdateTimeDisplay }) }}</div>
                     <div data-testid="update-countdown-text">
